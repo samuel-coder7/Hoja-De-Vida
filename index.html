@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi hoja de  vida</title>
+    <link rel="stylesheet"href="styles.css"> <!--Enlaza el archivo CSS(styles.css) para dar estilo-->
+</head>
+<body>   <!--Contiene todo el contenido visible de la pagina(textos, imagenes, etc..)-->
+    <div class="container"> <!--Un contenedor general para organizar el contenido. La clase conatiner se usa en CSS para dar estilos(como margenes o anchos)-->>
+        <!--Encabezado con nombre y foto-->
+        <header>  <!--seccion semantica para el encabezado de la pagina(logo, nombre, tirulo)-->
+         <div class="profile-pic">
+            <!-- Reemplaza 'tu-foto.jpg' con la ruta de tu imagen -->
+            <img src="imagenes/yo.jpg" alt="yo.jpg" style="margin: 0 auto; width: 120px; border-radius: ;">
+             </header>
+            
+        <!--Secciones pricipales-->
+        <section class="section">
+        <h2>Informacion personal</h2>
+        <ul> <!--Crea una lista desordenada (con viñetas).Cada <li> es un ítem de la lista.--></ul>
+          <li><strong>Email</strong> clavijoasamuel@gmail.com</li>            
+          <li><strong>Telefono</strong> +57 3224052207</li>
+          <li><strong>Ubicacion</strong> Aguadas, caldas, colombia </li>
+        </ul>
+    </section>
+      
+    <section class="section">
+        <h2>Educacion</h2>
+        <div class="item">  <!--Un contenedor para agrupar elementos relacionados-->
+            <h3>Institucion educativa Marino Gomez Estrada </h3>
+            <p>Bachiller tecnico en programacion web - 2025 </p>
+            </div>
+            
+    </section>
+
+    <section>
+      <section class="section">
+        <h2>Experiencia laboral</h2>
+        <div class="item">
+            <h3> Tecnico en Dibujo Digital </h3>
+            <p>Dibujo Decnico</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2> Habilidades</h2>
+        <ul class="skills"> <!--Lista desordenada con la clase skills para estilos personalizados (ej: mostrar habilidades)-->
+               
+            <li>HTML/CSS</li>
+            <li>figma</li>
+            <li>JavaScript Basico</li>
+
+        </ul>
+
+      </section>
+    <div> <!--Cierra el contenedor principal-->
+    
+        
+
+
+
+</body>
+</html>
