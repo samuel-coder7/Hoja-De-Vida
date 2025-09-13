@@ -3,7 +3,7 @@ body{
     font-family: "Arial, sans-serif";
     line-height: 1.6;
     background-color: beige(228, 225, 220);
-    color: rgb(15, 15, 15);
+    color: rgb(6, 5, 5);
     margin: 0;
     padding: 0;
 
@@ -71,7 +71,72 @@ h3{
 
   }
 
-  .skills{
-    background-color: ;
-  }
+
+    /* Estilos generales para tu hoja de vida (puedes personalizarlos) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #0056b3;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilos para el botón de imprimir */
+.print-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.print-button {
+    background-color: #007bff; /* Color azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* MEDIA QUERY PARA IMPRESIÓN */
+/* Esto es crucial: oculta el botón cuando la página se va a imprimir */
+@media print {
+    .print-button-container,
+    .print-button {
+        display: none !important; /* Oculta el botón de imprimir y su contenedor */
+    }
+
+
+}
+  
 
