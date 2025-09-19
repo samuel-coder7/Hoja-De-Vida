@@ -1,116 +1,117 @@
-/*Estilos generales*/
-body{
-    font-family: "Arial, sans-serif";
-    line-height: 1.6;
-    background-color: beige(228, 225, 220);
-    color: rgb(6, 5, 5);
-    margin: 0;
-    padding: 0;
-
-}
-
-.container{
-    width: 80;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: beige;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
-
-}
-/* Encabezado*/
-header{
-    text-align: center;
-    margin-bottom: 20px;
-    
-}
-
-.skills{
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-
-}
-.profile.pic{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin:0 auto 15px;
-
-
-}
-
-
-h1{
-    color: darkgrey;
-
-
-}
-
-h2{
-    color: darkgrey;
-}
-h3{
-    margin: 5px 0;
-    font-size: 0.5em;
-
-    }
-
-/*listas*/
-  ul{
-    padding-left: 20px;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-  }
-
-
-    /* Estilos generales para tu hoja de vida (puedes personalizarlos) */
+/* Estilos generales del cuerpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif; /* Corregida la fuente */
     line-height: 1.6;
-    margin: 20px auto;
-    max-width: 800px;
+    background-color: #f8f8f8; /* Color beige claro, corregido el error de sintaxis */
+    color: #333; /* Color de texto más oscuro y general */
+    margin: 20px auto; /* Centrar el contenido y dar margen superior/inferior */
+    max-width: 800px; /* Limitar el ancho máximo del cuerpo */
     padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #ddd; /* Borde sutil */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-h1, h2, h3 {
-    color: #0056b3;
+/* Contenedor principal */
+.container {
+    /* El body ya actúa como contenedor principal con max-width y margin: auto */
+    /* Por lo tanto, muchos de estos estilos se aplican al body directamente */
+    /* Si aún necesitas un contenedor interno, podrías darle un padding o background diferente */
+    /* Para este caso, simplificamos y el 'body' es el contenedor principal */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    padding: 0; /* Ya el body tiene padding, si este container fuera interno, aquí iría */
+    box-shadow: none; /* El body ya tiene sombra, evitamos duplicidad */
 }
 
+/* Encabezado */
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Más espacio inferior */
+    padding-bottom: 15px; /* Pequeño padding interno */
+    border-bottom: 1px solid #eee; /* Separador visual */
 }
 
+header h1 {
+    color: #0056b3; /* Color azul para el título principal */
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Foto de perfil */
+.profile-pic {
+    width: 120px;
+    height: 120px; /* Aquí es donde nos aseguramos que sea igual al width */
+    border-radius: 50%; /* Esto es lo que la hace circular */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+   
+}
+
+
+
+/* Secciones */
 section {
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px dashed #eee;
+    border-bottom: 1px dashed #eee; /* Separador punteado */
 }
 
 section:last-of-type {
-    border-bottom: none;
+    border-bottom: none; /* Elimina el borde de la última sección */
 }
 
+h2 {
+    color: #0056b3; /* Color azul para los subtítulos de sección */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff; /* Subrayado para los títulos de sección */
+    display: inline-block; /* Para que el subrayado se ajuste al texto */
+    padding-bottom: 5px;
+}
+
+h3 { /* Si usarás h3, aquí sus estilos */
+    margin: 5px 0;
+    font-size: 1em; /* Ajustado el tamaño, 0.5em era muy pequeño */
+    color: #444;
+}
+
+/* Listas */
 ul {
-    list-style-type: disc;
+    list-style-type: disc; /* Viñetas por defecto */
     margin-left: 20px;
+    padding: 0;
+    /* Los estilos de flexbox para listas generales no suelen ser los mejores,
+       se usan más para habilidades o elementos específicos */
+}
+
+/* Estilos específicos para la lista de habilidades */
+.skills {
+    list-style-type: none; /* Sin viñetas para habilidades */
+    padding: 0;
+    display: flex; /* Para que las habilidades se muestren en fila */
+    flex-wrap: wrap; /* Permite que las habilidades salten de línea si no caben */
+    gap: 10px; /* Espacio entre habilidades */
+    margin-left: 0; /* Elimina el margen por defecto de ul */
+}
+
+.skills li {
+    background-color: #e9f5ff; /* Fondo claro para cada habilidad */
+    color: #007bff; /* Color de texto para la habilidad */
+    padding: 8px 15px;
+    border-radius: 20px; /* Bordes redondeados */
+    border: 1px solid #b3d9ff;
+    font-size: 0.9em;
+    white-space: nowrap; /* Evita que el texto de la habilidad se divida */
 }
 
 /* Estilos para el botón de imprimir */
 .print-button-container {
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 20px; /* Agregado margen inferior */
 }
 
 .print-button {
@@ -128,6 +129,16 @@ ul {
     background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
 }
 
+/* Footer (derechos de autor) */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.9em;
+}
+
 /* MEDIA QUERY PARA IMPRESIÓN */
 /* Esto es crucial: oculta el botón cuando la página se va a imprimir */
 @media print {
@@ -136,11 +147,27 @@ ul {
         display: none !important; /* Oculta el botón de imprimir y su contenedor */
     }
 
+    body {
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
 
+    header, section, footer {
+        border: none !important; /* Elimina bordes para una impresión limpia */
+        padding: 0; /* Elimina padding que podría generar espacios no deseados */
+        margin: 0; /* Elimina márgenes */
+    }
+
+    /* Asegura que el contenido se ajuste al ancho de la página */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
-  
 
-
-  
 
 
