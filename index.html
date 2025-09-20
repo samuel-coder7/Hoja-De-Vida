@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi hoja de vida</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS (styles.css) para dar estilo -->
+</head>
+<body>   <!-- Contiene todo el contenido visible de la página (textos, imágenes, etc..) -->
+    <div class="container"> <!-- Un contenedor general para organizar el contenido. La clase container se usa en CSS para dar estilos (como márgenes o anchos) -->
+        <!-- Encabezado con nombre y foto -->
+        <header>  <!-- Sección semántica para el encabezado de la página (logo, nombre, título) -->
+            <div class="profile-pic">
+                <!-- Reemplaza 'tu-foto.jpg' con la ruta de tu imagen -->
+                <img src="imagenes/yo.jpg" alt="Foto de perfil" style="margin: 0 auto; width: 120px; border-radius: 50%;"> <!-- Agregado border-radius para una foto circular -->
+            </div>
+            <h1>Samuel Clavijo</h1> <!-- Añadido un nombre para el encabezado -->
+            <p>Bachiller Técnico en Programación Web</p> <!-- Añadido un título/ocupación -->
+        </header>
+                   
+        <div class="print-button-container">
+            <button onclick="window.print()" class="print-button">Imprimir Hoja de Vida</button>
+        </div>
+            
+        <!-- Secciones principales -->
+        <section class="section">
+            <h2>Información personal</h2>
+            <ul> <!-- Crea una lista desordenada (con viñetas). Cada <li> es un ítem de la lista. -->
+                <li><strong>Email:</strong> clavijoasamuel@gmail.com</li>            
+                <li><strong>Teléfono:</strong> +57 3224052207</li>
+                <li><strong>Ubicación:</strong> Aguadas, Caldas, Colombia</li>
+            </ul>
+        </section>
+      
+        <section class="section">
+            <h2>Educación</h2>
+            <div class="item">  <!-- Un contenedor para agrupar elementos relacionados -->
+                <p><strong>Institución Educativa Marino Gómez Estrada</strong></p>
+                <p>Bachiller Técnico en Programación Web - 2025</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Experiencia laboral</h2>
+            <div class="item">
+                <p><strong>Técnico en Dibujo Digital</strong></p>
+                <p>Dibujo Técnico</p>
+            
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Habilidades</h2>
+            <ul class="skills"> <!-- Lista desordenada con la clase skills para estilos personalizados (ej: mostrar habilidades) -->
+                <li>HTML/CSS</li>
+                <li>Figma</li>
+                <li>JavaScript Básico</li>
+                <!-- Las habilidades generalmente se listan, no se ponen en botones de impresión individualmente -->
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Declaración</h2>
+            <div class="item">
+                <p>Hago constar que la información aquí consignada es verídica y puede ser comprobada por cualquier persona.</p>
+            </div>
+        </section>
+    </div> <!-- Cierra el contenedor principal -->
+
+    <footer>
+        <p>© Copyright 2025 Samuel Clavijo - All Rights Reserved</p> <!-- Actualizado el nombre del copyright -->
+    </footer>
+</body>
+</html>
